@@ -173,3 +173,15 @@
 2023-10-27 12:31:15,710 [1] ERROR Kiosk.Class.Common - Error 이미 표시된 폼은 모달 대화 상자로 표시할 수 없습니다. showDialog을(를) 호출하기 전에 폼의 visible 속성을 false로 설정하십시오.
 2023-10-27 12:45:49,381 [1] INFO Kiosk.Class.Common - Info Program Start
 2023-10-27 12:46:36,609 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 12:51:50,973 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 12:53:31,020 [1] ERROR Kiosk.Class.Common - Error 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+2023-10-27 12:54:49,917 [1] DEBUG Kiosk.Main - 2023-10-27 12:54:49 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 4
+2023-10-27 12:54:49,952 [1] DEBUG Kiosk.Main - 2023-10-27 12:54:49 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 4
+2023-10-27 12:54:58,635 [1] ERROR Kiosk.Class.Common - Error 이미 표시된 폼은 모달 대화 상자로 표시할 수 없습니다. showDialog을(를) 호출하기 전에 폼의 visible 속성을 false로 설정하십시오.
+2023-10-27 12:55:58,508 [1] ERROR Kiosk.Class.Common - Error 컬렉션이 수정되었습니다. 열거 작업이 실행되지 않을 수도 있습니다.

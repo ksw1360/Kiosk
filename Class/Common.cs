@@ -68,7 +68,7 @@ namespace Kiosk.Class
             try
             {
                 Form fc = Application.OpenForms[form]; //열린폼을 찾기
-                    //[form]; // as Main;
+                                                       //[form]; // as Main;
                 Form preform1 = Application.OpenForms[PreviewForm]; //현재 작업중인 폼
                 if (preform1 != null)
                 {
@@ -85,6 +85,9 @@ namespace Kiosk.Class
                     switch (form) //폼 생성
                     {
                         case "InputAddress":
+                            fc = new InputAddress();
+                            break;
+                        case "inputAddress":
                             fc = new InputAddress();
                             break;
                         case "InputMobileNo":

@@ -36,6 +36,14 @@
     <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
       <HintPath>packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
+    <Reference Include="CommonControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CommonControls.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CommonLib.dll</HintPath>
+    </Reference>
     <Reference Include="Gma.UserActivityMonitor">
       <HintPath>.\Gma.UserActivityMonitor.dll</HintPath>
     </Reference>

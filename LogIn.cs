@@ -1,4 +1,5 @@
-﻿using Kiosk.Class;
+﻿using CommonLib;
+using Kiosk.Class;
 using Kiosk.Popup;
 using System;
 using System.Data;
@@ -85,10 +86,10 @@ namespace Kiosk
         // 윈도우 표시하기/숨기기
         [DllImport("user32.dll")]
         private static extern int ShowWindow(int windowHandle, int command);
-        
+
         DataRow drUser;
 
-        SHA256 sha256 = new SHA256Managed();
+        //SHA256 sha256 = new SHA256Managed();
 
         public LogIn()
         {
@@ -125,7 +126,7 @@ namespace Kiosk
 
             this.txtUser.Size = new System.Drawing.Size(800, 80);
             this.txtUserPW.Size = new System.Drawing.Size(800, 80);
-            
+
             this.txtUser.Font = new Font("NotoSansKR-Regular", 36, FontStyle.Regular);
             this.txtUserPW.Font = new Font("NotoSansKR-Regular", 36, FontStyle.Regular);
             this.txtUser.TextAlign = HorizontalAlignment.Left;
@@ -146,9 +147,9 @@ namespace Kiosk
                 txtUser.Text = _id.ToString();
                 txtUserPW.Text = _pw.ToString();
                 //label1.Text = _id.ToString();
-                if(_chk.ToString() !=""|| _chk!=null)
+                if (_chk.ToString() != "" || _chk != null)
                 {
-                    if(_chk.ToString() == "Checked")
+                    if (_chk.ToString() == "Checked")
                     {
                         checkBox1.Checked = true;
                     }
@@ -157,7 +158,7 @@ namespace Kiosk
                         checkBox1.Checked = false;
                     }
                 }
-            }            
+            }
 
             KeyboardImageSetup();
 
@@ -173,13 +174,23 @@ namespace Kiosk
 
         private void CloseAllForms()
         {
-            // 모든 열린 폼을 확인하고 닫습니다.
-            foreach (Form form in Application.OpenForms)
+            try
             {
-                if (form != this)
+                // 모든 열린 폼을 확인하고 닫습니다.
+                if (Application.OpenForms.Count > 0)
                 {
-                    form.Close();
+                    foreach (Form form in Application.OpenForms)
+                    {
+                        if (form != this)
+                        {
+                            form.Close();
+                        }
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                Common.SetLog(ex.Message, 3);
             }
         }
 
@@ -327,8 +338,9 @@ namespace Kiosk
                 chk = false;
             }
 
-            //string encPW = ComLib.SHA256(txtUserPW.Text);
+            string encPW = ComLib.SHA256(txtUserPW.Text);
             //string encPW = txtUserPW.Text;
+            /*
             byte[] hash = sha256.ComputeHash(Encoding.ASCII.GetBytes(txtUserPW.Text));
             StringBuilder sb = new StringBuilder();
 
@@ -338,11 +350,11 @@ namespace Kiosk
             }
 
             string encPW = sb.ToString();
-
+            */
             //# 비밀번호 초기화 여부 체크
             //비밀번호 암호화 부분 - 수정예정
-            //if ((bool)drUser["PW_INIT_YN"] == true && encPW == ComLib.SHA256(ComVar.INIT_PW))
-            if ((bool)drUser["PW_INIT_YN"] == true)
+            if ((bool)drUser["PW_INIT_YN"] == true && encPW == ComLib.SHA256(ComVar.INIT_PW))
+            //if ((bool)drUser["PW_INIT_YN"] == true)
             {
                 MessageBox.Show(this, "초기화된 비밀번호입니다.\r\n비밀번호를 변경해주세요.", "", MessageBoxButtons.OK);
                 PopChangePW frmChangePW = new PopChangePW();

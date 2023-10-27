@@ -1,4 +1,5 @@
-﻿using Kiosk.Class;
+﻿using CommonLib;
+using Kiosk.Class;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -13,7 +14,7 @@ namespace Kiosk.Popup
     {
         public string old_password { get; internal set; }
 
-        SHA256 sha256 = new SHA256Managed();
+        //SHA256 sha256 = new SHA256Managed();
 
         public PopChangePW()
         {
@@ -40,9 +41,9 @@ namespace Kiosk.Popup
 
             //# 비밀번호 체크
             //비밀번호 암호화 부분 - 수정예정
-            //string encPW = SHA256(txtUserPW.Text);
+            string encPW = ComLib.SHA256(txtUserPW.Text);
             //string encPW = txtUserPW.Text;
-
+            /*
             byte[] hash = sha256.ComputeHash(Encoding.ASCII.GetBytes(txtUserPW.Text));
             StringBuilder sb = new StringBuilder();
 
@@ -52,6 +53,7 @@ namespace Kiosk.Popup
             }
 
             string encPW = sb.ToString();
+            */
             string old_PW = dtUser.Rows[0]["USER_PW"].ToString();
             if (encPW != old_PW)
             {
@@ -76,7 +78,7 @@ namespace Kiosk.Popup
             List<string> lstStrSQL = new List<string>();
             string strSQL = "/* queryID : UpdateNewPw - 새 비밀번호 update */";
             strSQL += Environment.NewLine + "UPDATE USER_INFO";
-            //strSQL += Environment.NewLine + "   SET USER_PW     = '" + ComLib.SHA256(txtNewPw.Text) + "'"; //# 비밀번호
+            strSQL += Environment.NewLine + "   SET USER_PW     = '" + ComLib.SHA256(txtNewPw.Text) + "'"; //# 비밀번호
             strSQL += Environment.NewLine + "     , PW_ERR_CNT  = 0";                                      //# 비밀번호오류횟수
             strSQL += Environment.NewLine + "     , PW_INIT_YN  = FALSE";                                  //# 비밀번호초기화여부
             strSQL += Environment.NewLine + "     , PW_CHG_DT   =  NOW()";                                 //# 비밀번호수정일시
@@ -105,7 +107,7 @@ namespace Kiosk.Popup
             strSQL += Environment.NewLine + "               FROM USER_PWCHG_HIST HIST";
             strSQL += Environment.NewLine + "              WHERE HIST.YKIHO   = '" + Common.YKIHO + "'";
             strSQL += Environment.NewLine + "                AND HIST.USER_ID = '" + Common.USER_ID + "')";
-            //strSQL += Environment.NewLine + "          , '" + ComLib.SHA256(txtNewPw.Text) + "'";
+            strSQL += Environment.NewLine + "          , '" + ComLib.SHA256(txtNewPw.Text) + "'";
             strSQL += Environment.NewLine + "          , '" + Common.USER_ID + "'";
             strSQL += Environment.NewLine + "          , NOW()";
             strSQL += Environment.NewLine + "          , '" + Common.USER_ID + "'";
@@ -142,9 +144,9 @@ namespace Kiosk.Popup
             string bfPw = GetBfPw();
             if (!string.IsNullOrEmpty(bfPw))
             {
+                //if (txtNewPw.Text == bfPw)
                 //비밀번호 암호화 부분 - 수정예정
-                //if (ComLib.SHA256(txtNewPw.Text) == bfPw)
-                if (txtNewPw.Text == bfPw)
+                if (ComLib.SHA256(txtNewPw.Text) == bfPw)
                 {
                     MessageBox.Show(this, "직전 비밀번호는 사용할 수 없습니다.", "", MessageBoxButtons.OK);
                     txtNewPw.Focus();
