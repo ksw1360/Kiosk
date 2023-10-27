@@ -1,0 +1,174 @@
+2023-10-26 18:03:00,323 [1] INFO Kiosk.Inherit - Info Program Start
+2023-10-27 09:12:19,456 [1] INFO Kiosk.Inherit - Info Program Start
+2023-10-27 09:13:11,760 [1] INFO Kiosk.Inherit - Info Program Start
+2023-10-27 09:15:17,194 [1] INFO Kiosk.Inherit - Info Program Start
+2023-10-27 09:15:45,336 [1] INFO Kiosk.Inherit - Info Program Start
+2023-10-27 09:16:19,806 [1] INFO Kiosk.Inherit - Info Program Start
+2023-10-27 09:20:37,507 [1] INFO Kiosk.Inherit - Info Program Start
+2023-10-27 09:30:39,095 [1] INFO Kiosk.Inherit - Info Program Start
+2023-10-27 09:31:39,916 [1] INFO Kiosk.Inherit - Info Program Start
+2023-10-27 09:33:08,956 [1] INFO Kiosk.Inherit - Info Program Start
+2023-10-27 09:33:21,556 [1] ERROR Kiosk.Inherit - Error 컬렉션이 수정되었습니다. 열거 작업이 실행되지 않을 수도 있습니다.
+2023-10-27 09:44:14,565 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 09:44:39,911 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 09:48:08,863 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 09:50:23,814 [1] ERROR Kiosk.Class.Common - Error 컬렉션이 수정되었습니다. 열거 작업이 실행되지 않을 수도 있습니다.
+2023-10-27 10:01:04,836 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 10:03:49,624 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 10:10:08,255 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 10:10:40,855 [1] DEBUG Kiosk.Main - 2023-10-27 10:10:40 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 10:10:47,338 [1] DEBUG Kiosk.Main - 2023-10-27 10:10:47 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 10:12:17,043 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 10:13:10,565 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 10:14:09,820 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 10:18:30,707 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 10:19:15,887 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 10:19:38,757 [1] DEBUG Kiosk.Main - 2023-10-27 10:19:38 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 10:19:40,386 [1] DEBUG Kiosk.Main - 2023-10-27 10:19:40 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 10:21:37,447 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 10:23:51,571 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 10:25:26,294 [1] DEBUG Kiosk.Main - 2023-10-27 10:25:26 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 4
+2023-10-27 10:25:26,326 [1] DEBUG Kiosk.Main - 2023-10-27 10:25:26 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 4
+2023-10-27 10:28:42,771 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 10:33:12,482 [1] DEBUG Kiosk.Main - 2023-10-27 10:33:12 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 4
+2023-10-27 10:33:12,525 [1] DEBUG Kiosk.Main - 2023-10-27 10:33:12 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 4
+2023-10-27 10:51:20,637 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 11:17:57,450 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 11:19:31,420 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 11:20:29,930 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 11:29:24,840 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 11:30:36,489 [1] DEBUG Kiosk.Main - 2023-10-27 11:30:36 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 11:30:36,515 [1] DEBUG Kiosk.Main - 2023-10-27 11:30:36 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 11:32:13,562 [1] ERROR Kiosk.Class.Common - Error 이미 모달 형식으로 표시된 폼은 모달 대화 상자로 표시할 수 없습니다. showDialog을(를) 호출하기 전에 폼을 닫으십시오.
+2023-10-27 11:33:28,014 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 11:34:00,024 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 11:34:20,296 [1] DEBUG Kiosk.Main - 2023-10-27 11:34:20 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 11:34:20,328 [1] DEBUG Kiosk.Main - 2023-10-27 11:34:20 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 11:36:11,649 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 11:36:49,953 [1] DEBUG Kiosk.Main - 2023-10-27 11:36:49 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 11:36:49,978 [1] DEBUG Kiosk.Main - 2023-10-27 11:36:49 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 11:42:54,648 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 11:43:09,280 [1] DEBUG Kiosk.Main - 2023-10-27 11:43:09 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 11:43:09,313 [1] DEBUG Kiosk.Main - 2023-10-27 11:43:09 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 11:44:15,465 [1] ERROR Kiosk.Class.Common - Error 컬렉션이 수정되었습니다. 열거 작업이 실행되지 않을 수도 있습니다.
+2023-10-27 11:44:23,435 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 11:44:43,828 [1] DEBUG Kiosk.Main - 2023-10-27 11:44:43 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 11:44:43,853 [1] DEBUG Kiosk.Main - 2023-10-27 11:44:43 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 11:46:08,725 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 11:52:38,925 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 11:53:52,505 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 11:54:32,122 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 11:56:24,428 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 11:56:41,034 [1] ERROR Kiosk.Class.Common - Error 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+2023-10-27 11:57:15,199 [1] DEBUG Kiosk.Main - 2023-10-27 11:57:15 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 11:57:15,224 [1] DEBUG Kiosk.Main - 2023-10-27 11:57:15 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 11:57:50,801 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 11:59:38,533 [1] ERROR Kiosk.Class.Common - Error 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+2023-10-27 11:59:43,278 [1] ERROR Kiosk.Class.Common - Error 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+2023-10-27 12:05:35,080 [1] ERROR Kiosk.Class.Common - Error 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+2023-10-27 12:05:39,233 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 12:05:55,383 [1] ERROR Kiosk.Class.Common - Error 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+2023-10-27 12:06:09,481 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 12:06:55,908 [1] ERROR Kiosk.Class.Common - Error 'System.Windows.Forms.Button' 형식 개체를 'Telerik.WinControls.UI.RadGridView' 형식으로 캐스팅할 수 없습니다.
+2023-10-27 12:07:12,127 [1] DEBUG Kiosk.Main - 2023-10-27 12:07:12 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 12:07:12,153 [1] DEBUG Kiosk.Main - 2023-10-27 12:07:12 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 12:07:26,199 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 12:07:27,452 [1] ERROR Kiosk.Class.Common - Error 컬렉션이 수정되었습니다. 열거 작업이 실행되지 않을 수도 있습니다.
+2023-10-27 12:13:56,688 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 12:15:37,590 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 12:18:21,042 [1] ERROR Kiosk.Class.Common - Error 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+2023-10-27 12:21:03,878 [1] ERROR Kiosk.Class.Common - Error 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.
+2023-10-27 12:24:06,681 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 12:25:51,173 [1] DEBUG Kiosk.Main - 2023-10-27 12:25:51 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 12:25:51,199 [1] DEBUG Kiosk.Main - 2023-10-27 12:25:51 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 12:26:16,305 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 12:28:18,106 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 12:29:15,975 [1] DEBUG Kiosk.Main - 2023-10-27 12:29:15 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 12:29:16,000 [1] DEBUG Kiosk.Main - 2023-10-27 12:29:16 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT PAT_NO 
+  FROM PTNT_DETL 
+  WHERE YKIHO = '22222222' 
+    AND PAT_NO =' at line 6
+2023-10-27 12:29:32,618 [1] ERROR Kiosk.Class.Common - Error 이미 표시된 폼은 모달 대화 상자로 표시할 수 없습니다. showDialog을(를) 호출하기 전에 폼의 visible 속성을 false로 설정하십시오.
+2023-10-27 12:29:45,912 [1] ERROR Kiosk.Class.Common - Error 이미 표시된 폼은 모달 대화 상자로 표시할 수 없습니다. showDialog을(를) 호출하기 전에 폼의 visible 속성을 false로 설정하십시오.
+2023-10-27 12:31:15,710 [1] ERROR Kiosk.Class.Common - Error 이미 표시된 폼은 모달 대화 상자로 표시할 수 없습니다. showDialog을(를) 호출하기 전에 폼의 visible 속성을 false로 설정하십시오.
+2023-10-27 12:45:49,381 [1] INFO Kiosk.Class.Common - Info Program Start
