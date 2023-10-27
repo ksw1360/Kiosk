@@ -79,7 +79,7 @@ namespace Kiosk
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(973, 401);
+            this.button2.Location = new System.Drawing.Point(20, 531);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(48, 40);
             this.button2.TabIndex = 13;

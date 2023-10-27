@@ -1,0 +1,15 @@
+2023-10-27 14:54:28,140 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 14:55:10,639 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 14:55:11,450 [1] ERROR Kiosk.Class.Common - Error 파일이나 어셈블리 'Motion.CommonLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' 또는 여기에 종속되어 있는 파일이나 어셈블리 중 하나를 로드할 수 없습니다. 지정된 파일을 찾을 수 없습니다.
+2023-10-27 14:55:14,761 [1] ERROR Kiosk.Class.Common - Error 파일이나 어셈블리 'Motion.CommonLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' 또는 여기에 종속되어 있는 파일이나 어셈블리 중 하나를 로드할 수 없습니다. 지정된 파일을 찾을 수 없습니다.
+2023-10-27 14:55:15,007 [1] ERROR Kiosk.Class.Common - Error 파일이나 어셈블리 'Motion.CommonLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' 또는 여기에 종속되어 있는 파일이나 어셈블리 중 하나를 로드할 수 없습니다. 지정된 파일을 찾을 수 없습니다.
+2023-10-27 14:55:15,247 [1] ERROR Kiosk.Class.Common - Error 파일이나 어셈블리 'Motion.CommonLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' 또는 여기에 종속되어 있는 파일이나 어셈블리 중 하나를 로드할 수 없습니다. 지정된 파일을 찾을 수 없습니다.
+2023-10-27 14:55:35,023 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 14:57:37,433 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 14:59:34,620 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 15:02:52,330 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 15:03:01,717 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 15:03:20,373 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 15:06:32,804 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 15:07:20,017 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 15:07:23,757 [1] ERROR Kiosk.Class.Common - Error 이미 표시된 폼은 모달 대화 상자로 표시할 수 없습니다. showDialog을(를) 호출하기 전에 폼의 visible 속성을 false로 설정하십시오.

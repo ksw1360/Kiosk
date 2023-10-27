@@ -105,6 +105,7 @@ namespace Kiosk
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.virtualKeyboardPanel.SuspendLayout();
@@ -889,6 +890,7 @@ namespace Kiosk
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.button4);
             this.panel6.Controls.Add(this.button3);
             this.panel6.Controls.Add(this.checkBox1);
             this.panel6.Controls.Add(this.txtUserPW);
@@ -1018,6 +1020,15 @@ namespace Kiosk
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(80, 230);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(29, 24);
+            this.button4.TabIndex = 12;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // LogIn
             // 
@@ -1180,5 +1191,6 @@ namespace Kiosk
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox txtUserPW;
         private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.Button button4;
     }
 }
