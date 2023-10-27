@@ -282,7 +282,7 @@ namespace Kiosk.Class
             List<string> lstStrSQL = new List<string>();
             DataTable table = new DataTable();
             bool late_ = false; // 지연설정 
-            string strSQL = "";
+            //string strSQL = "";
             string insu_Knd_Cd = string.Empty;
             string rcntVstDd = string.Empty;
             string diagTpCd = "C01";
@@ -425,6 +425,7 @@ namespace Kiosk.Class
             }
             catch (Exception ex)
             {
+                Common.SetLog(ex.Message, 3);
                 ret = 0;
             }
 

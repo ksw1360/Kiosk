@@ -237,9 +237,16 @@ namespace Kiosk
                 ykihoInput.ShowDialog();
             }
 
-            if (CheckUserInfo())
+            try
             {
-                Common.PageMove("Main", this.Name, "1");
+                if (CheckUserInfo())
+                {
+                    Common.PageMove("Main", this.Name, "1");
+                }
+            }
+            catch (Exception ex)
+            {
+                Common.SetLog(ex.Message, 3);
             }
         }
 

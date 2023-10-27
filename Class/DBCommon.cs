@@ -170,7 +170,7 @@ namespace Kiosk.Class
                 #region Select Data                
                 try
                 {
-                    int ret = 0;
+                    //int ret = 0;
                     DataTable result = new DataTable();
                     MySqlCommand command = new MySqlCommand(Query, connection);
                     connection.Open();

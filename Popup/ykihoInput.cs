@@ -125,7 +125,7 @@ namespace Kiosk.Popup
             }
             catch (Exception ex)
             {
-
+                Common.SetLog(ex.Message, 3);
             }
         }
 

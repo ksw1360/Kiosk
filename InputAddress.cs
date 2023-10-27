@@ -46,7 +46,7 @@ namespace Kiosk
         /// <summary>
         /// 사운드 재생 여부
         /// </summary>
-        private bool playSound = true;
+        //private bool playSound = true;
 
         /// <summary>
         /// Caps Lock 버튼 눌림 여부
@@ -62,7 +62,7 @@ namespace Kiosk
         /// 한글 모드 여부
         /// </summary>
         private bool isHANGULMode = false;
-        private int idx;
+        //private int idx;
 
         #endregion
         
