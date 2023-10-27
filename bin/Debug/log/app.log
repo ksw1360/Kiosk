@@ -172,3 +172,4 @@
 2023-10-27 12:29:45,912 [1] ERROR Kiosk.Class.Common - Error 이미 표시된 폼은 모달 대화 상자로 표시할 수 없습니다. showDialog을(를) 호출하기 전에 폼의 visible 속성을 false로 설정하십시오.
 2023-10-27 12:31:15,710 [1] ERROR Kiosk.Class.Common - Error 이미 표시된 폼은 모달 대화 상자로 표시할 수 없습니다. showDialog을(를) 호출하기 전에 폼의 visible 속성을 false로 설정하십시오.
 2023-10-27 12:45:49,381 [1] INFO Kiosk.Class.Common - Info Program Start
+2023-10-27 12:46:36,609 [1] INFO Kiosk.Class.Common - Info Program Start

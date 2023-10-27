@@ -135,7 +135,6 @@ C:\workstation\Kiosk_New\ksw1360\Kiosk\bin\Debug\System.ValueTuple.xml
 C:\workstation\Kiosk_New\ksw1360\Kiosk\bin\Debug\Telerik.WinControls.xml
 C:\workstation\Kiosk_New\ksw1360\Kiosk\bin\Debug\Telerik.WinControls.GridView.xml
 C:\workstation\Kiosk_New\ksw1360\Kiosk\bin\Debug\Telerik.WinControls.UI.xml
-C:\workstation\Kiosk_New\ksw1360\Kiosk\obj\Debug\Kiosk.csproj.AssemblyReference.cache
 C:\workstation\Kiosk_New\ksw1360\Kiosk\obj\Debug\Kiosk.InputAddress.resources
 C:\workstation\Kiosk_New\ksw1360\Kiosk\obj\Debug\Kiosk.InputMobileNo.resources
 C:\workstation\Kiosk_New\ksw1360\Kiosk\obj\Debug\Kiosk.InputMobileNo_Add.resources
