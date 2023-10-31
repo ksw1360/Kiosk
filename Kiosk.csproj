@@ -29,17 +29,17 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>
     </DocumentationFile>
-    <Prefer32Bit>false</Prefer32Bit>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -161,9 +161,13 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Class\Common.cs" />
+    <Compile Include="Class\CommonSms.cs" />
+    <Compile Include="Class\CreatorSmsFactory.cs" />
     <Compile Include="Class\DaumAdress.cs" />
     <Compile Include="Class\DBCommon.cs" />
+    <Compile Include="Class\DBCommon2.cs" />
     <Compile Include="Class\Receipt.cs" />
+    <Compile Include="Class\SendSms.cs" />
     <Compile Include="Class\VKeyboard.cs" />
     <Compile Include="InputAddress.cs">
       <SubType>Form</SubType>
@@ -292,6 +296,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mainform.resx">
       <DependentUpon>Mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\PersonalChoice.resx">
+      <DependentUpon>PersonalChoice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Popup\PersonInfoRule.resx">
       <DependentUpon>PersonInfoRule.cs</DependentUpon>
@@ -477,6 +484,8 @@
     <None Include="Resources\뒤로가기_주민등록번호.png" />
     <None Include="Resources\Login_세로버전.png" />
     <None Include="Resources\Main화면.png" />
+    <None Include="icon\ID.png" />
+    <None Include="icon\password.png" />
     <Content Include="vkb.dll" />
   </ItemGroup>
   <ItemGroup>

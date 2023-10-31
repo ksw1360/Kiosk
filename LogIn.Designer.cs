@@ -33,6 +33,15 @@ namespace Kiosk
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.virtualKeyboardPanel = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.txtUserPW = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.k0408PictureBox = new System.Windows.Forms.PictureBox();
             this.k0308PictureBox = new System.Windows.Forms.PictureBox();
             this.k0208PictureBox = new System.Windows.Forms.PictureBox();
@@ -94,21 +103,13 @@ namespace Kiosk
             this.k0301PictureBox = new System.Windows.Forms.PictureBox();
             this.k0201PictureBox = new System.Windows.Forms.PictureBox();
             this.k0101PictureBox = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.txtUserPW = new System.Windows.Forms.TextBox();
-            this.txtUser = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.radPictureBox1 = new Telerik.WinControls.UI.RadPictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.virtualKeyboardPanel.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.k0408PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.k0308PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.k0208PictureBox)).BeginInit();
@@ -170,11 +171,6 @@ namespace Kiosk
             ((System.ComponentModel.ISupportInitialize)(this.k0301PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.k0201PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.k0101PictureBox)).BeginInit();
-            this.panel6.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radPictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -268,6 +264,113 @@ namespace Kiosk
             this.virtualKeyboardPanel.Name = "virtualKeyboardPanel";
             this.virtualKeyboardPanel.Size = new System.Drawing.Size(1064, 256);
             this.virtualKeyboardPanel.TabIndex = 26;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.button3);
+            this.panel6.Controls.Add(this.checkBox1);
+            this.panel6.Controls.Add(this.txtUserPW);
+            this.panel6.Controls.Add(this.txtUser);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1064, 428);
+            this.panel6.TabIndex = 25;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(122)))), ((int)(((byte)(214)))));
+            this.button3.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold);
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(181, 311);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(712, 77);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "LOGIN";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Noto Sans KR Regular", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.checkBox1.Location = new System.Drawing.Point(411, 254);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(260, 51);
+            this.checkBox1.TabIndex = 10;
+            this.checkBox1.Text = "로그인 상태 유지";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // txtUserPW
+            // 
+            this.txtUserPW.BackColor = System.Drawing.Color.White;
+            this.txtUserPW.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUserPW.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtUserPW.Location = new System.Drawing.Point(247, 148);
+            this.txtUserPW.Multiline = true;
+            this.txtUserPW.Name = "txtUserPW";
+            this.txtUserPW.PasswordChar = '*';
+            this.txtUserPW.Size = new System.Drawing.Size(663, 80);
+            this.txtUserPW.TabIndex = 9;
+            this.txtUserPW.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUserPW.UseSystemPasswordChar = true;
+            this.txtUserPW.Click += new System.EventHandler(this.textBox2_Click);
+            // 
+            // txtUser
+            // 
+            this.txtUser.BackColor = System.Drawing.Color.White;
+            this.txtUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtUser.Location = new System.Drawing.Point(247, 34);
+            this.txtUser.Multiline = true;
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(663, 80);
+            this.txtUser.TabIndex = 8;
+            this.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUser.Click += new System.EventHandler(this.textBox1_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 117);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1064, 160);
+            this.panel4.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.panel3.Controls.Add(this.button1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 40);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1064, 77);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1064, 40);
+            this.panel2.TabIndex = 0;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.button2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(179, 40);
+            this.button2.TabIndex = 1;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // k0408PictureBox
             // 
@@ -888,98 +991,6 @@ namespace Kiosk
             this.k0101PictureBox.Visible = false;
             this.k0101PictureBox.Click += new System.EventHandler(this.k0102PictureBox_Click);
             // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.button4);
-            this.panel6.Controls.Add(this.button3);
-            this.panel6.Controls.Add(this.checkBox1);
-            this.panel6.Controls.Add(this.txtUserPW);
-            this.panel6.Controls.Add(this.txtUser);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1064, 428);
-            this.panel6.TabIndex = 25;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(122)))), ((int)(((byte)(214)))));
-            this.button3.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(181, 311);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(712, 77);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "LOGIN";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Noto Sans KR Regular", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox1.Location = new System.Drawing.Point(411, 254);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(260, 51);
-            this.checkBox1.TabIndex = 10;
-            this.checkBox1.Text = "로그인 상태 유지";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // txtUserPW
-            // 
-            this.txtUserPW.BackColor = System.Drawing.Color.White;
-            this.txtUserPW.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUserPW.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtUserPW.Location = new System.Drawing.Point(176, 148);
-            this.txtUserPW.Name = "txtUserPW";
-            this.txtUserPW.PasswordChar = '*';
-            this.txtUserPW.Size = new System.Drawing.Size(712, 21);
-            this.txtUserPW.TabIndex = 9;
-            this.txtUserPW.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtUserPW.UseSystemPasswordChar = true;
-            this.txtUserPW.Click += new System.EventHandler(this.textBox2_Click);
-            // 
-            // txtUser
-            // 
-            this.txtUser.BackColor = System.Drawing.Color.White;
-            this.txtUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtUser.Location = new System.Drawing.Point(176, 34);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(712, 21);
-            this.txtUser.TabIndex = 8;
-            this.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtUser.Click += new System.EventHandler(this.textBox1_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.panel4.Controls.Add(this.radPictureBox1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 117);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1064, 160);
-            this.panel4.TabIndex = 2;
-            // 
-            // radPictureBox1
-            // 
-            this.radPictureBox1.Image = global::Kiosk.Properties.Resources._1_1;
-            this.radPictureBox1.Location = new System.Drawing.Point(378, 6);
-            this.radPictureBox1.Name = "radPictureBox1";
-            this.radPictureBox1.Size = new System.Drawing.Size(343, 132);
-            this.radPictureBox1.SvgImageXml = null;
-            this.radPictureBox1.TabIndex = 6;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 40);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1064, 77);
-            this.panel3.TabIndex = 1;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
@@ -997,39 +1008,6 @@ namespace Kiosk
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1064, 40);
-            this.panel2.TabIndex = 0;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(179, 40);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(80, 230);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(29, 24);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -1043,6 +1021,10 @@ namespace Kiosk
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.virtualKeyboardPanel.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.k0408PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.k0308PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.k0208PictureBox)).EndInit();
@@ -1104,12 +1086,6 @@ namespace Kiosk
             ((System.ComponentModel.ISupportInitialize)(this.k0301PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.k0201PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.k0101PictureBox)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radPictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1121,7 +1097,6 @@ namespace Kiosk
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
-        private Telerik.WinControls.UI.RadPictureBox radPictureBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel virtualKeyboardPanel;
@@ -1191,6 +1166,5 @@ namespace Kiosk
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox txtUserPW;
         private System.Windows.Forms.TextBox txtUser;
-        private System.Windows.Forms.Button button4;
     }
 }

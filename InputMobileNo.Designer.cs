@@ -218,6 +218,7 @@ namespace Kiosk
             this.textBox1.Text = "휴대폰 번호를 입력해 주세요.";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // button10
             // 

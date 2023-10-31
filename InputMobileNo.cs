@@ -338,5 +338,19 @@ namespace Kiosk
                 btnNext.ForeColor = Color.FromArgb(99, 114, 171);
             }
         }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            bool chk = Regex.IsMatch(this.textBox1.Text, @"[ㄱㅎ가힣]");
+
+            if (chk)
+            {
+                textBox1.Text = string.Empty;
+            }
+            else if (textBox1.Text.Length == 13)
+            {
+                btnNext.PerformClick();
+            }
+        }
     }
 }

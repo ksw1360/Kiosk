@@ -33,7 +33,6 @@ namespace Kiosk
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.btnPrePtnt = new System.Windows.Forms.Button();
             this.btnNewPtnt = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnPreview = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
@@ -45,6 +44,7 @@ namespace Kiosk
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -76,16 +76,6 @@ namespace Kiosk
             this.btnNewPtnt.TabIndex = 11;
             this.btnNewPtnt.UseVisualStyleBackColor = false;
             this.btnNewPtnt.Click += new System.EventHandler(this.btnNewPtnt_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(20, 531);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(48, 40);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel4
             // 
@@ -212,6 +202,14 @@ namespace Kiosk
             this.showToolStripMenuItem.Text = "Show";
             this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(954, 358);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.TabIndex = 24;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -220,11 +218,11 @@ namespace Kiosk
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1064, 1061);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnPrePtnt);
             this.Controls.Add(this.btnNewPtnt);
             this.DoubleBuffered = true;
@@ -244,13 +242,13 @@ namespace Kiosk
             this.panel1.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         public System.Windows.Forms.Button btnPrePtnt;
         public System.Windows.Forms.Button btnNewPtnt;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel4;
         public System.Windows.Forms.Button btnNext;
         public System.Windows.Forms.Button btnPreview;
@@ -262,6 +260,7 @@ namespace Kiosk
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

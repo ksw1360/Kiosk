@@ -4,10 +4,8 @@ using Kiosk.Popup;
 using System;
 using System.Data;
 using System.Drawing;
-using System.Drawing.Drawing2D;
 using System.IO;
 using System.Runtime.InteropServices;
-using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
 
@@ -116,16 +114,22 @@ namespace Kiosk
         {
             Common.SetLog("Program Start", 1);
             Initialize();
-            //Taskbar("Hide");
+            Taskbar("Hide");
             this.FormBorderStyle = FormBorderStyle.None;
             this.Size = new Size(1080, 1920);
-            //this.StartPosition = FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.button1.FlatStyle = FlatStyle.Flat;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button1.Width, button1.Height, 20, 20));
 
-            this.txtUser.Size = new System.Drawing.Size(800, 80);
-            this.txtUserPW.Size = new System.Drawing.Size(800, 80);
+            this.txtUser.Multiline = false;
+            this.txtUserPW.Multiline = false;
+
+            this.txtUser.Location = new Point(230, 34);
+            this.txtUserPW.Location = new Point(230, 148);
+
+            this.txtUser.Size = new Size(663, 80);
+            this.txtUserPW.Size = new Size(663, 80);
 
             this.txtUser.Font = new Font("NotoSansKR-Regular", 36, FontStyle.Regular);
             this.txtUserPW.Font = new Font("NotoSansKR-Regular", 36, FontStyle.Regular);
@@ -163,6 +167,9 @@ namespace Kiosk
             KeyboardImageSetup();
 
             Common.RoundButtonCorners(button1, 20);
+            //pictureBox1.Region = Region.FromHrgn(CreateRoundRectRgn(2, 2, pictureBox1.Width, pictureBox1.Height, 15, 15));
+
+            //pictureBox1.Height = txtUser.Height;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -170,6 +177,7 @@ namespace Kiosk
             Taskbar("Show");
             CloseAllForms();
             this.Close();
+            Application.Exit();
         }
 
         private void CloseAllForms()
@@ -181,10 +189,13 @@ namespace Kiosk
                 {
                     foreach (Form form in Application.OpenForms)
                     {
+                        form.Close();
+                        /*
                         if (form != this)
                         {
-                            form.Close();
+                            
                         }
+                        */
                     }
                 }
             }

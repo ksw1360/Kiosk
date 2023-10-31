@@ -109,5 +109,14 @@ namespace Kiosk
             this.Visible = true;
             this.WindowState = FormWindowState.Maximized;
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length == 25)
+            {
+                Common.ReadingQRcode(this.textBox1.Text);
+                this.textBox1.Text = "";
+            }
+        }
     }
 }

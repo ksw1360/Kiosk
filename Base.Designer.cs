@@ -1,7 +1,7 @@
 ﻿
-namespace Kiosk.Popup
+namespace Kiosk
 {
-    partial class PersonalChoice
+    partial class Base
     {
         /// <summary>
         /// Required designer variable.
@@ -31,14 +31,14 @@ namespace Kiosk.Popup
         {
             this.SuspendLayout();
             // 
-            // PersonalChoice
+            // Base
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "PersonalChoice";
-            this.Text = "PersonalChoice";
-            this.Load += new System.EventHandler(this.PersonalChoice_Load);
+            this.Name = "Base";
+            this.Text = "Base";
+            this.Load += new System.EventHandler(this.Base_Load);
             this.ResumeLayout(false);
 
         }

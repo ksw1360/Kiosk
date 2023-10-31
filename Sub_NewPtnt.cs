@@ -1,7 +1,9 @@
 ﻿using Kiosk.Class;
 using System;
+using System.Data;
 using System.Drawing;
 using System.Runtime.InteropServices;
+using System.Text;
 using System.Timers;
 using System.Windows.Forms;
 
@@ -65,6 +67,8 @@ namespace Kiosk
         #endregion
 
         public static Sub_NewPtnt sub_NewPtnt;
+
+        int cnt = 0;
 
         public Sub_NewPtnt()
         {
@@ -137,7 +141,7 @@ namespace Kiosk
         private void btnNext_Click(object sender, EventArgs e)
         {
             Common.Name = this.textBox1.Text;
-            if (Common.check ==1)
+            if (Common.check == 1)
             {
                 Common.PageMove("InputMobileNo", this.Name, "1");
             }
@@ -166,34 +170,25 @@ namespace Kiosk
             //timer1.Start();
         }
 
-        private void timer_Elapsed(object sender, ElapsedEventArgs e)
-        {
-            /*
-            if (idx == 546)
-            {
-                timer1.Stop();
-                textBox1.Focus();
-            }
-            else
-            {
-                idx = idx + 40;
-                virtualKeyboardPanel.Height = idx;
-            }
-            */
-        }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (textBox1.Text.Length > 0)
+            try
             {
-                this.btnNext.Enabled = true;
-                btnNext.BackgroundImage = Properties.Resources.상단_다음버튼_색반전;
+                if (textBox1.Text.Length > 0)
+                {
+                    this.btnNext.Enabled = true;
+                    btnNext.BackgroundImage = Properties.Resources.상단_다음버튼_색반전;
+                }
+                else
+                {
+                    //
+                    this.btnNext.Enabled = false;
+                    btnNext.BackgroundImage = Properties.Resources.그룹_117;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                //
-                this.btnNext.Enabled = false;
-                btnNext.BackgroundImage = Properties.Resources.그룹_117;
+                Common.SetLog(ex.Message, 3);
             }
         }
 
@@ -331,7 +326,7 @@ namespace Kiosk
 
             if (keyPictureBox == this.k0114PictureBox) // "Backspace"
             {
-               keybd_event((byte)Keys.Back, 0, 0, 0);
+                keybd_event((byte)Keys.Back, 0, 0, 0);
                 keybd_event((byte)Keys.Back, 0, 0x02, 0);
             }
             /*
@@ -858,14 +853,20 @@ namespace Kiosk
 
         #endregion
 
-        private void virtualKeyboardPanel_Paint(object sender, PaintEventArgs e)
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-
-        }
-
-        private void virtualKeyboardPanel_Paint_1(object sender, PaintEventArgs e)
-        {
-
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                Common.Name = this.textBox1.Text;
+                if (Common.check == 1)
+                {
+                    Common.PageMove("InputMobileNo", this.Name, "1");
+                }
+                else
+                {
+                    Common.PageMove("InputMobileNo_Add", this.Name, "1");
+                }
+            }
         }
     }
 }

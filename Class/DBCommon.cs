@@ -11,6 +11,16 @@ namespace Kiosk.Class
     internal class DBCommon
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Main));
+
+        internal static DataTable GetFIXSMSInfo(object planCode)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("/* queryId - 호출하기 양식조회 */");
+            sb.Append(" \r\n SELECT * ");
+            sb.Append(" \r\n FROM  SMS_FIX_PLAN_INFO");
+            sb.Append($" \r\n WHERE YKIHO = '{Common.YKIHO}' AND PLAN_CD = '{planCode}';");
+            return SelectData(sb.ToString());
+        }
         #region ini 입력 메소드
         [DllImport("kernel32")]
         private static extern long WritePrivateProfileString(string section, string key, string val, string filePath);

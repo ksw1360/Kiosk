@@ -28,6 +28,8 @@ namespace Kiosk.Popup
             DataTable dtRule = DBCommon.SelectData(strSQL);
 
             this.TxtPrivacy.Text = dtRule.Rows[0]["PRIVACY_STRING"].ToString();
+
+            this.TopMost = true;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

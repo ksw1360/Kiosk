@@ -28,6 +28,8 @@ namespace Kiosk.Popup
             webBrowser1.ObjectForScripting = this;
 
             this.Tag = null;
+
+            this.TopMost = true;
         }
 
         public void CallForm(object sZipCode, object sAddress1)

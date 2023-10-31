@@ -3,8 +3,6 @@ using Kiosk.Class;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Security.Cryptography;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
@@ -71,6 +69,8 @@ namespace Kiosk.Popup
 
             //# 새 비밀번호 update
             UpdateNewPw();
+
+            this.TopMost = true;
         }
 
         private void UpdateNewPw()

@@ -53,6 +53,8 @@ namespace Kiosk.Popup
                 textBox[idx].BackColor = Color.White;
                 textBox[idx].ForeColor = Color.Black;
             }
+
+            this.TopMost = true;
         }
 
         private void ykihoInput_Load(object sender, EventArgs e)

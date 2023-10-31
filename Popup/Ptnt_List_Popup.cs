@@ -4,7 +4,6 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using Telerik.WinControls.UI;
 
 namespace Kiosk.Popup
 {
@@ -28,6 +27,8 @@ namespace Kiosk.Popup
             }
 
             this.radGridView1.Font = new Font("굴림", 22, FontStyle.Regular);
+
+            this.TopMost = true;
         }
 
         private void radGridView1_CellClick(object sender, Telerik.WinControls.UI.GridViewCellEventArgs e)
@@ -41,10 +42,18 @@ namespace Kiosk.Popup
                 List.Add(radGridView1.Rows[e.RowIndex].Cells["PAT_NO"].Value.ToString());
                 */
                 GetGridSelectData(e.RowIndex);
-                this.DialogResult = DialogResult.OK;
-                this.Close();
+                PopupMessageQuestion popup = new PopupMessageQuestion();
+                popup.panel4.Visible = true;
+                popup.Names = "선택하신 정보는 다음과 같습니다.";
+                popup.messages = List[0] + " " + List[1];
+                popup.result = "으로 접수하시겠습니까?";
+                DialogResult dr = popup.ShowDialog();
+                if (dr == DialogResult.OK)
+                {
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
+                }
             }
-
         }
 
         private void GetGridSelectData(int rowIndex)
@@ -67,14 +76,23 @@ namespace Kiosk.Popup
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //var grid = (RadGridView)sender;
+
             var row = radGridView1.SelectedRows.FirstOrDefault(); // 선택한 첫 번째 행 가져오기
             if (row != null)
             {
                 var rows = row.Index;
                 GetGridSelectData(rows);
-
-                DialogResult = DialogResult.OK;
+                PopupMessageQuestion popup = new PopupMessageQuestion();
+                popup.panel4.Visible = true;
+                popup.Names = "선택하신 정보는 다음과 같습니다.";
+                popup.messages = List[0] + " " + List[1];
+                popup.result = "으로 접수하시겠습니까?";
+                DialogResult dr = popup.ShowDialog();
+                if (dr == DialogResult.OK)
+                {
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
+                }
             }
         }
     }

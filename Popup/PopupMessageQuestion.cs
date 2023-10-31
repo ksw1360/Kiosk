@@ -39,7 +39,7 @@ namespace Kiosk.Popup
             this.lbThird.TextAlign = ContentAlignment.MiddleCenter;
             this.lbThird.Dock = DockStyle.Fill;
 
-            
+            this.TopMost = true;
         }
 
         private void radButton2_Click(object sender, EventArgs e)

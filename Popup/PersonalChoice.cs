@@ -8,5 +8,10 @@ namespace Kiosk.Popup
         {
             InitializeComponent();
         }
+
+        private void PersonalChoice_Load(object sender, System.EventArgs e)
+        {
+            this.TopMost = true;
+        }
     }
 }

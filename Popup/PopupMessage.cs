@@ -41,6 +41,8 @@ namespace Kiosk.Popup
             this.lbThird.Font = new Font("Noto Sans KR Regular", 24, FontStyle.Regular);
             this.lbThird.TextAlign = ContentAlignment.MiddleCenter;
             this.lbThird.Dock = DockStyle.Fill;
+
+            this.TopMost = true;
         }
 
         private void radButton1_Click(object sender, EventArgs e)
@@ -49,7 +51,6 @@ namespace Kiosk.Popup
             {
                 //Common Init
                 Common.Init();
-
 
                 Form specificForm = Application.OpenForms.OfType<Main>().FirstOrDefault();
 

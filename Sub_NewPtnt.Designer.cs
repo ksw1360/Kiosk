@@ -200,6 +200,7 @@ namespace Kiosk
             this.textBox1.TabIndex = 11;
             this.textBox1.Click += new System.EventHandler(this.textBox1_Click_1);
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // panel2
             // 
@@ -445,7 +446,6 @@ namespace Kiosk
             this.virtualKeyboardPanel.Name = "virtualKeyboardPanel";
             this.virtualKeyboardPanel.Size = new System.Drawing.Size(1080, 546);
             this.virtualKeyboardPanel.TabIndex = 23;
-            this.virtualKeyboardPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.virtualKeyboardPanel_Paint_1);
             // 
             // k0408PictureBox
             // 
